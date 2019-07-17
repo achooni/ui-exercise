@@ -5789,9 +5789,26 @@ button.close {
 
 body {
   margin-top: 70px;
-  font-family: 'Muli', sans-serif; }
+  font-family: "Muli", sans-serif; }
 
-main aside, main section {
+header .navbar-default {
+  border-bottom: none; }
+  @media (min-width: 768px) {
+    header .navbar-default .navbar-nav {
+      float: right; } }
+  header .navbar-default .navbar-nav > li a {
+    color: #333333; }
+    header .navbar-default .navbar-nav > li a:hover {
+      background-color: #eeeeee; }
+  header .navbar-default .navbar-nav > .active > a {
+    background-color: transparent;
+    pointer-events: none; }
+    @media (min-width: 768px) {
+      header .navbar-default .navbar-nav > .active > a {
+        border-bottom: 2px solid #337ab7; } }
+
+main aside,
+main section {
   padding-left: 15px;
   padding-right: 15px; }
 
@@ -5801,13 +5818,22 @@ main section {
   @media (max-width: 991px) {
     main section {
       width: 100%; } }
+  main section .blog-item {
+    margin-bottom: 30px; }
+    main section .blog-item img {
+      margin-bottom: 15px; }
+    main section .blog-item h2 {
+      margin-top: 0;
+      font-size: 24px; }
 
-aside {
+main aside {
   width: 30%;
   float: right;
   margin-bottom: 30px; }
+  main aside h2 {
+    margin-top: 0; }
   @media (max-width: 991px) {
-    aside {
+    main aside {
       width: 100%; } }
 
 /*# sourceMappingURL=test.css.map */
