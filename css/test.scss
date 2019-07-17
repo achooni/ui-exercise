@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import "./../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+body {
+  margin-top: 70px;
+  font-family: 'Muli', sans-serif;
+}
+
+
+main {
+  aside,  section {
+    padding-left:15px;
+    padding-right: 15px;
+  }
+  section {
+    float: left;
+    @media (max-width: $screen-sm-max) {
+        width:100%
+    }
+    width: 70%;
+
+ 
+}
+  }
+  aside{
+ 
+    @media (max-width: $screen-sm-max) {
+         width:100%;
+
+ 
+    }
+ 
+
+    width: 30%;
+    float: right;
+    margin-bottom: 30px;
+ 
+  }
+}
+
