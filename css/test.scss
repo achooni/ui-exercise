@@ -64,12 +64,31 @@ main {
     h2{
         margin-top:0;
     }
-    @media (max-width: $screen-sm-max) {
-      width: 100%;
-    }
+    &.open{
+        right:0;
+        transition: all 1.5s;
+  }
 
-    width: 30%;
-    float: right;
-    margin-bottom: 30px;
+
+  @media (max-width: $screen-sm-max) {
+      right:-100%;
+      width:100%;
+      z-index:1030;
+      background:#fff;
+      top:0;
+      bottom:0;
+
+      height:100%;
+      padding:15px;
+
+  }
+  position: fixed;
+  right:-30%;
+  transition: all 1.5s;
+
+
+  width: 30%;
+  float: right;
+  margin-bottom: 30px;
   }
 }

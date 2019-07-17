@@ -5827,13 +5827,26 @@ main section {
       font-size: 24px; }
 
 main aside {
+  position: fixed;
+  right: -30%;
+  transition: all 1.5s;
   width: 30%;
   float: right;
   margin-bottom: 30px; }
   main aside h2 {
     margin-top: 0; }
+  main aside.open {
+    right: 0;
+    transition: all 1.5s; }
   @media (max-width: 991px) {
     main aside {
-      width: 100%; } }
+      right: -100%;
+      width: 100%;
+      z-index: 1030;
+      background: #fff;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      padding: 15px; } }
 
 /*# sourceMappingURL=test.css.map */
